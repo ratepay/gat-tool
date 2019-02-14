@@ -1,0 +1,42 @@
+@tailwind preflight;
+
+@tailwind components;
+
+@tailwind utilities;
+
+@import 'variables';
+
+body {
+    background: #FAFAFA;
+    font-family: 'Raleway', 'sans-serif';
+}
+
+.rp-logo {
+    width: 45%;
+}
+
+.subline {
+    color: $rpBeige !important;
+}
+
+.rp-table {
+    width: 100%;
+    border-collapse: collapse;
+    th, td {
+        padding: 21px 31px;
+        border-bottom: 1px solid #f2f2f2;
+    }
+}
+
+.rp-table-votes {
+    width: 100%;
+    border-collapse: collapse;
+    th {
+        padding: 5px 10px;
+        border-bottom: 1px solid #f2f2f2;
+    }
+    td {
+        padding: 21px 31px;
+        border-bottom: 1px solid #f2f2f2;
+    }
+}
