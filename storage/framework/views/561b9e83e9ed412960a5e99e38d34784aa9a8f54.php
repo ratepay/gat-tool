@@ -47,6 +47,8 @@
 
             </div>
         <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
+        <br />
+        <a class="text-grey-darkest" href="/">Back to List</a>
     </div>
 </section>
 <?php $__env->stopSection(); ?>

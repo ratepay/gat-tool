@@ -37,7 +37,7 @@
                 @endif
             </tbody>
         </table>
-        <div class="mt-5">
+        <div class="mt-5 mb-8">
             {{ $presentations->links() }}
         </div>
     </div>

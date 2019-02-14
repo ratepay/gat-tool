@@ -48,6 +48,8 @@
                 {!! nl2br($feedback->review) !!}
             </div>
         @endforeach
+        <br />
+        <a class="text-grey-darkest" href="/">Back to List</a>
     </div>
 </section>
 @endsection
