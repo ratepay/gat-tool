@@ -16,7 +16,7 @@ class CreatePresentationRatingsTable extends Migration
         Schema::create('presentation_ratings', function (Blueprint $table) {
             $table->increments('id');
             $table->unsignedInteger('presentation_id');
-            $table->foreign('presentation_id')->references('id')->on('presentations');
+            $table->foreign('presentation_id')->references('id')->on('presentations')->onDelete('cascade');
             $table->integer('awesome')->nullable();
             $table->integer('good')->nullable();
             $table->integer('average')->nullable();

@@ -4,6 +4,9 @@
 <section class="mt-10">
     <div class="container mx-auto">
         <div class="mb-5 text-right">
+            @if(Auth::check())
+                <a class="no-underline text-white bg-grey py-2 px-4 border hover:bg-grey-darker mr-1" href="/logout">Logout</a>
+            @endif
             <a class="no-underline text-white bg-blue py-2 px-4 border hover:bg-blue-light mr-1" href="/presentations/create">New Presentation</a>
         </div>
         <table class="table-auto rp-table bg-white shadow-md text-left">
@@ -31,6 +34,9 @@
                             <td class="text-center">
                                 <small><a class="no-underline bg-transparent py-1 px-2 border hover:bg-blue-light mr-1 text-blue hover:text-white" href="/presentations/{{ $presentation->id }}/votes/create">Vote</a></small>
                                 <small><a class="no-underline bg-transparent py-1 px-2 border hover:bg-blue-light text-blue hover:text-white" href="/presentations/{{ $presentation->id }}/votes">Results</a></small>
+                                @if(Auth::check())
+                                    <small><a class="no-underline bg-red py-1 px-2 border hover:bg-red-light text-red-darker" href="/presentations/{{ $presentation->id }}/delete">Delete</a></small>
+                                @endif
                             </td>
                         </tr>
                     @endforeach

@@ -41,7 +41,7 @@
                         <label class="block text-grey-darker text-sm font-bold mb-2" for="email">
                             Email
                         </label>
-                        <input class="shadow appearance-none border w-full py-2 px-3 text-grey-darker leading-tight focus:outline-none" name="email" type="email" placeholder="Last Name">
+                        <input class="shadow appearance-none border w-full py-2 px-3 text-grey-darker leading-tight focus:outline-none" name="email" type="email" placeholder="Email">
                     </div>
                     <div>
                         <button type="submit" class="bg-blue hover:bg-blue-dark text-white font-bold py-2 px-4 w-full mb-5">Save</button>
@@ -50,6 +50,6 @@
                 </form>
             </div>
         </div>
-    </section>          
+    </section>
 <?php $__env->stopSection(); ?>
 <?php echo $__env->make('layouts.app', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>

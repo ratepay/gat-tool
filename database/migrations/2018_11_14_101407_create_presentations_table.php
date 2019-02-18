@@ -16,7 +16,7 @@ class CreatePresentationsTable extends Migration
         Schema::create('presentations', function (Blueprint $table) {
             $table->increments('id');
             $table->unsignedInteger('speaker_id');
-            $table->foreign('speaker_id')->references('id')->on('speakers');
+            $table->foreign('speaker_id')->references('id')->on('speakers')->onDelete('cascade');
             $table->string('title');
             $table->datetime('date');
             $table->text('description');
