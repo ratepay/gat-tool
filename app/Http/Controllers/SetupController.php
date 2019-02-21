@@ -13,6 +13,10 @@ class SetupController extends Controller
      */
     public function index()
     {
+        if (Setting::first()) {
+            return redirect('/')->withError('Application already set up!');
+        }
+
         return view('setup.index');
     }
 
@@ -27,7 +31,7 @@ class SetupController extends Controller
             'name' => 'required',
         ]);
 
-        $path = $request->logo->store('logo');
+        $path = $request->logo->store('logo', 'public');
 
         Setting::create([
             'name' => $request->get('name'),

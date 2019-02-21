@@ -8,10 +8,9 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>RatePAY Give &amp; Take Voting Tool</title>
+    <title>Give &amp; Take Voting Tool</title>
 
     <!-- Styles -->
-    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Raleway" />
     <link href="{{ mix('css/app.css') }}" rel="stylesheet">
 </head>
 <body>
@@ -19,8 +18,8 @@
         <header>
             <a class="no-underline text-grey-darkest" href="/">
                 <div class="container mx-auto text-center">
-                    <img class="rp-logo" src="/images/RatePAY.svg" alt="RatePAY Logo">
-                    <h1 class="text-5xl subline">Give & Take</h1>
+                    <img class="rp-logo" src="{{ asset($logo) }}" alt="{{ $name }} Logo">
+                    <h1 class="text-5xl subline">{{ $name }}</h1>
                 </div>
             </a>
         </header>

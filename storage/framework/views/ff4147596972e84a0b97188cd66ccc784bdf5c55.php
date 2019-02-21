@@ -8,10 +8,9 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="<?php echo e(csrf_token()); ?>">
 
-    <title>RatePAY Give &amp; Take Voting Tool</title>
+    <title>Give &amp; Take Voting Tool</title>
 
     <!-- Styles -->
-    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Raleway" />
     <link href="<?php echo e(mix('css/app.css')); ?>" rel="stylesheet">
 </head>
 <body>
@@ -19,8 +18,8 @@
         <header>
             <a class="no-underline text-grey-darkest" href="/">
                 <div class="container mx-auto text-center">
-                    <img class="rp-logo" src="/images/RatePAY.svg" alt="RatePAY Logo">
-                    <h1 class="text-5xl subline">Give & Take</h1>
+                    <img class="rp-logo" src="<?php echo e(asset($logo)); ?>" alt="<?php echo e($name); ?> Logo">
+                    <h1 class="text-5xl subline"><?php echo e($name); ?></h1>
                 </div>
             </a>
         </header>
