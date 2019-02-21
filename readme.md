@@ -27,3 +27,14 @@ The installation is fairly simple and can be done in 2 ways.
 6. Copy .env.example to .env and fill in DB connection
 7. Run `php artisan storage:link`
 8. Run `php artisan migrate`
+
+## Run the app
+After installation open the app in a web browser. The first time opening it, it will automatically redirect you to an installation process.
+Fill in the apps name and choose a company logo to upload. After that you are asked to register an admin user.
+Completing the setup you can use the app for voting presentations.
+
+### Login
+If you want to delete a presentation you must be logged in. Just open a web browser and append `/login` to your domain and you can log in.
+
+### Register
+If you want to register another admin user, just append `/register` to your domain and you can register a new user.
