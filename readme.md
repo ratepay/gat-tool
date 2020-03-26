@@ -1,11 +1,10 @@
 # RatePAY GmbH Give & Take Tool
 
-Bewertungstool für unsere Give & Take Vorträge. Hier könnt ihr eure Stimme zu den Talks abgeben und das Ergebnis einsehen.
+Evaluation tool for our "Give & Take" (GAT) lecture series and all other presentations. With this tool you can vote for the talks and see the results. 
 
 ## Prerequisites
 * A Server running
 * MySQL Database running
-
 
 ## Installation
 The installation is fairly simple and can be done in 2 ways.
@@ -28,7 +27,6 @@ The installation is fairly simple and can be done in 2 ways.
 6. Copy .env.example to .env and fill in DB connection
 7. Run `php artisan storage:link`
 8. Run `php artisan migrate`
-
 
 ## Run the app
 After installation open the app in a web browser. The first time opening it, it will automatically redirect you to an installation process.
