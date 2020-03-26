@@ -1,4 +1,4 @@
-# RatePAY GmbH Give & Take Tool
+# Ratepay GmbH Give & Take (GAT) Tool
 
 Evaluation tool for our "Give & Take" (GAT) lecture series and all other presentations. With this tool you can vote for the talks and see the results. 
 
